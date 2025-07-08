@@ -1,0 +1,38 @@
+.page-title {
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8200ff;
+  border-bottom: 3px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.empty-wishlist-message {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 3rem 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "source-sans-pro", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 1rem;
+  background-color: #8200ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-logo {
+  margin-left: 0;
+  height: 25px;
+  width: auto;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-nav .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.app-nav .nav-text {
+  display: none;
+}
+
+.app-nav .nav-link:hover {
+  opacity: 0.8;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    padding: 1rem 2rem;
+  }
+
+  .app-logo {
+    height: 30px;
+  }
+
+  .app-nav {
+    gap: 5rem;
+  }
+
+  .app-nav .nav-text {
+    display: inline;
+  }
+
+  .app-main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
